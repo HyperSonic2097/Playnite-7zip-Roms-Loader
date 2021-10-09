@@ -1,0 +1,7 @@
+﻿Id: 7zRomsLoader_c3d56d05-0b81-4e9a-b208-d80b1bbde2b9
+Name: Generic Plugin
+Author: John Doe
+Version: 1.0
+Module: 7zRomsLoader.dll
+Type: GenericPlugin
+Icon: icon.png
