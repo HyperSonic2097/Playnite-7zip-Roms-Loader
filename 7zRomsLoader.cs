@@ -30,7 +30,7 @@ namespace 7zRomsLoader
 
         public override void OnGameStarted(Game game)
         {
-            // Add code to be executed when game is started running.
+            // Add code to be executed when game is started running.z
         }
 
         public override void OnGameStarting(Game game)
