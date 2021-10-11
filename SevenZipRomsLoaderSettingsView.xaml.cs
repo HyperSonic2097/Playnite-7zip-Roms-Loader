@@ -13,11 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace 7zRomsLoader
+namespace SevenZipRomsLoader
 {
-    public partial class 7zRomsLoaderSettingsView : UserControl
+    public partial class SevenZipRomsLoaderSettingsView : UserControl
     {
-        public 7zRomsLoaderSettingsView()
+        public SevenZipRomsLoaderSettingsView()
         {
             InitializeComponent();
         }

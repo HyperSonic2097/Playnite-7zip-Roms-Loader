@@ -1,7 +1,7 @@
-﻿Id: 7zRomsLoader_c3d56d05-0b81-4e9a-b208-d80b1bbde2b9
-Name: 7zip_Roms_Loader
-Author: HyperSonic2097 & ExtremeMultiman
+﻿Id: SevenZipRomsLoader_f6755ec1-f0ef-4d54-9502-79fa4aa861fb
+Name: Generic Plugin
+Author: HyperSonic2097 & ExtremeMiltiMan
 Version: 1.0
-Module: 7zRomsLoader.dll
+Module: SevenZipRomsLoader.dll
 Type: GenericPlugin
 Icon: icon.png

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 7zRomsLoader
+namespace SevenZipRomsLoader
 {
-    public class 7zRomsLoaderSettings : ISettings
+    public class SevenZipRomsLoaderSettings : ISettings
     {
-        private readonly 7zRomsLoader plugin;
+        private readonly SevenZipRomsLoader plugin;
 
         public string Option1 { get; set; } = string.Empty;
 
@@ -22,17 +22,17 @@ namespace 7zRomsLoader
         public bool OptionThatWontBeSaved { get; set; } = false;
 
         // Parameterless constructor must exist if you want to use LoadPluginSettings method.
-        public 7zRomsLoaderSettings()
+        public SevenZipRomsLoaderSettings()
         {
         }
 
-        public 7zRomsLoaderSettings(7zRomsLoader plugin)
+        public SevenZipRomsLoaderSettings(SevenZipRomsLoader plugin)
         {
             // Injecting your plugin instance is required for Save/Load method because Playnite saves data to a location based on what plugin requested the operation.
             this.plugin = plugin;
 
             // Load saved settings.
-            var savedSettings = plugin.LoadPluginSettings<7zRomsLoaderSettings>();
+            var savedSettings = plugin.LoadPluginSettings<SevenZipRomsLoaderSettings>();
 
             // LoadPluginSettings returns null if not saved data is available.
             if (savedSettings != null)

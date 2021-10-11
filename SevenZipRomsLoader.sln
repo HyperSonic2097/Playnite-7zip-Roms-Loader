@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7zRomsLoader", "7zRomsLoader.csproj", "{4FDF1E89-5BC3-4C72-8FDA-0D580E7A5D5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZipRomsLoader", "SevenZipRomsLoader.csproj", "{4FDF1E89-5BC3-4C72-8FDA-0D580E7A5D5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6C7D699E-AA21-4F80-8300-09BFF8412910}
+		SolutionGuid = {3560EEE5-C9D7-42F4-9554-3B78CFC34B02}
 	EndGlobalSection
 EndGlobal

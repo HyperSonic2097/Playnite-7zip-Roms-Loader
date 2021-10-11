@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace 7zRomsLoader
+namespace SevenZipRomsLoader
 {
-    public class 7zRomsLoader : Plugin
+    public class SevenZipRomsLoader : Plugin
     {
         private static readonly ILogger logger = LogManager.GetLogger();
 
-        private 7zRomsLoaderSettings settings { get; set; }
+        private SevenZipRomsLoaderSettings settings { get; set; }
 
-        public override Guid Id { get; } = Guid.Parse("c3d56d05-0b81-4e9a-b208-d80b1bbde2b9");
+        public override Guid Id { get; } = Guid.Parse("f6755ec1-f0ef-4d54-9502-79fa4aa861fb");
 
-        public 7zRomsLoader(IPlayniteAPI api) : base(api)
+        public SevenZipRomsLoader(IPlayniteAPI api) : base(api)
         {
-            settings = new 7zRomsLoaderSettings(this);
+            settings = new SevenZipRomsLoaderSettings(this);
         }
 
         public override void OnGameInstalled(Game game)
@@ -30,7 +30,7 @@ namespace 7zRomsLoader
 
         public override void OnGameStarted(Game game)
         {
-            // Add code to be executed when game is started running.z
+            // Add code to be executed when game is started running.
         }
 
         public override void OnGameStarting(Game game)
@@ -70,7 +70,7 @@ namespace 7zRomsLoader
 
         public override UserControl GetSettingsView(bool firstRunSettings)
         {
-            return new 7zRomsLoaderSettingsView();
+            return new SevenZipRomsLoaderSettingsView();
         }
     }
 }
