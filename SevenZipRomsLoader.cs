@@ -1,4 +1,5 @@
 ﻿using Playnite.SDK;
+using Playnite.SDK.Events;
 using Playnite.SDK.Models;
 using Playnite.SDK.Plugins;
 using System;
@@ -23,44 +24,14 @@ namespace SevenZipRomsLoader
             settings = new SevenZipRomsLoaderSettings(this);
         }
 
-        public override void OnGameInstalled(Game game)
+        public override void OnGameInstalled(OnGameInstalledEventArgs args)
         {
-            // Add code to be executed when game is finished installing.
+            base.OnGameInstalled(args);
         }
 
-        public override void OnGameStarted(Game game)
+        public override void OnLibraryUpdated(OnLibraryUpdatedEventArgs args)
         {
-            // Add code to be executed when game is started running.
-        }
-
-        public override void OnGameStarting(Game game)
-        {
-            // Add code to be executed when game is preparing to be started.
-        }
-
-        public override void OnGameStopped(Game game, long elapsedSeconds)
-        {
-            // Add code to be executed when game is preparing to be started.
-        }
-
-        public override void OnGameUninstalled(Game game)
-        {
-            // Add code to be executed when game is uninstalled.
-        }
-
-        public override void OnApplicationStarted()
-        {
-            // Add code to be executed when Playnite is initialized.
-        }
-
-        public override void OnApplicationStopped()
-        {
-            // Add code to be executed when Playnite is shutting down.
-        }
-
-        public override void OnLibraryUpdated()
-        {
-            // Add code to be executed when library is updated.
+            base.OnLibraryUpdated(args);
         }
 
         public override ISettings GetSettings(bool firstRunSettings)
@@ -71,6 +42,41 @@ namespace SevenZipRomsLoader
         public override UserControl GetSettingsView(bool firstRunSettings)
         {
             return new SevenZipRomsLoaderSettingsView();
+        }
+
+        public override void OnGameStarting(OnGameStartingEventArgs args)
+        {
+            base.OnGameStarting(args);
+        }
+
+        public override void OnGameStarted(OnGameStartedEventArgs args)
+        {
+            base.OnGameStarted(args);
+        }
+
+        public override void OnGameStopped(OnGameStoppedEventArgs args)
+        {
+            base.OnGameStopped(args);
+        }
+
+        public override void OnGameUninstalled(OnGameUninstalledEventArgs args)
+        {
+            base.OnGameUninstalled(args);
+        }
+
+        public override void OnGameSelected(OnGameSelectedEventArgs args)
+        {
+            base.OnGameSelected(args);
+        }
+
+        public override void OnApplicationStarted(OnApplicationStartedEventArgs args)
+        {
+            base.OnApplicationStarted(args);
+        }
+
+        public override void OnApplicationStopped(OnApplicationStoppedEventArgs args)
+        {
+            base.OnApplicationStopped(args);
         }
     }
 }
